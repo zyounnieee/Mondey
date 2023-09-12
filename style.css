@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 *{
@@ -11,7 +12,8 @@ body{
 
 .navigation_bar{
 
-    background: lightcoral; font-family: 'Times New Roman', Times, serif;   padding-right: 15px; padding-left: 75px;
+    background: rgb(247, 152, 152); font-family: 'Times New Roman', Times, serif;   padding-right: 15px; padding-left: 75px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .navi{
@@ -85,14 +87,6 @@ h1{
     
 }
 
-.searchbox img {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 10px;
-    top: 2px;
-}
-
 .links-container{
    
     position: relative;
@@ -108,6 +102,16 @@ h1{
     margin-right: 0;
   }
 }
+.searchbox i{
+
+    position: relative;
+    left: 94%;
+    bottom: 30px;
+
+}
+.fa-customize{
+    font-size: 28px;
+}
 
 .links img{
    object-fit: contain;
@@ -117,12 +121,6 @@ h1{
     border: 4px solid #f89090de;
     border-radius: 50px;
     border-style: outset;
-}
-
-.button-primary img{
-    width: 35px;
-    height: 35px;
-    position: relative;
 }
 
 .Homebtn .button-primary{
@@ -138,4 +136,63 @@ h1{
    width: 250px;
    justify-content: center;
    align-items: center;
+   margin-bottom: 70px;
+}
+
+.Homebtn i{
+    position: relative;
+    padding-left: 20px;
+}
+.paragraph p {
+    margin-bottom: 5px!important;
+    line-height: 5%;
+}
+
+p{
+   margin-left: 250px;
+   margin-right: 250px;
+   line-height: 25px !important;
+}
+
+.Homebtn2 .button-secondary{
+    font-weight: 600;
+    background: #f89090de !important;
+    color: #fff !important;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative;
+   display: flex;
+   margin: 100px auto 10px;
+   height: 40px;
+   width: 250px;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 70px;
+}
+
+.Homebtn2 i{
+    position: relative;
+    padding-left: 10px;
+}
+
+.footer-link{
+    align-items: center ; 
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 270px;
+}
+
+.about-text{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 20px;
+    line-height: 1.6em;
+    font-size: 12px;
+    opacity: .4;
+}
+
+.copyright{
+    text-align: center;
+    margin-bottom: 0 !important;
+    font-size: 12px;
 }
