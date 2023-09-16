@@ -11,7 +11,7 @@ body{
 }
 
 .navigation_bar{
-
+    
     background: rgb(247, 152, 152); font-family: 'Times New Roman', Times, serif;   padding-right: 15px; padding-left: 75px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -22,6 +22,94 @@ body{
 
 .logo img{ 
     height: 50px; width: 50px;
+    position: absolute;
+    top: 0%;
+    right: 10px;
+}
+
+
+.menu-bar{
+    height: 100%;
+    width: 250px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translatex(-400px);
+}
+
+.menu-bar .head{
+    color: seashell;
+    background-color: lightcoral;
+    font-size: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,lightcoral);
+}
+
+ol{
+    width: 100%;
+    list-style: none;
+}
+
+ol li{
+    display: block;
+    width: 100%;
+}
+
+ol li a{
+    color: lightcoral;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+ol li:hover a{
+    background: lightcoral;
+    color: #fff;
+    letter-spacing: 5px;
+
+}
+
+.logo input{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+.menu-bar span{
+    position: absolute;
+    right: -60px;
+    top: 0px;
+    font-size: 50px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0px 8px;
+    cursor: pointer;
+    background: 000;
+}
+
+#bar{
+    background:  rgb(247, 152, 152);
+}
+
+#check:checked ~ .menu-bar{
+    transform: translateX(-150px);
+
+}
+
+#check:checked ~ .menu-bar #bar{
+    display: none;
+
 }
 
 .logo2{
@@ -30,10 +118,12 @@ body{
 }
 
 li{
+    
     list-style: none; display: inline-block;
 }
 
 li a{
+    display: none;
     color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
 }
 
@@ -51,7 +141,7 @@ h1{
     margin: auto;
     margin-top: 5%;
     position: relative;
-    width: 500px;
+    width: 300px;
     height: 42px;
     border: 4px solid #f89090de;
     padding: 0px 10px;
@@ -105,8 +195,9 @@ h1{
 .searchbox i{
 
     position: relative;
-    left: 94%;
+    left: 90%;
     bottom: 30px;
+    
 
 }
 .fa-customize{
@@ -143,14 +234,10 @@ h1{
     position: relative;
     padding-left: 20px;
 }
-.paragraph p {
-    margin-bottom: 5px!important;
-    line-height: 5%;
-}
 
 p{
-   margin-left: 250px;
-   margin-right: 250px;
+   margin-left: 40px;
+   margin-right: 40px;
    line-height: 25px !important;
 }
 
@@ -195,4 +282,30 @@ p{
     text-align: center;
     margin-bottom: 0 !important;
     font-size: 12px;
+}
+
+@media only screen and  (min-width: 768px){
+    .navigation_bar{
+        display: block;  
+    }
+    .logo i{
+        display: none;
+    }
+
+    .searchbox i{
+        left: 94%;
+    }
+
+    .searchbox {
+         width: 500px;
+    }
+
+    p{
+        margin-left: 200px;
+        margin-right: 200px;
+        line-height: 25px !important;
+    }
+    li a{
+        display: block;
+    }
 }
